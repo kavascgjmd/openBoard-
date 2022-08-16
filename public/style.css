@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body{
+    margin:0;
+    padding: 0;
+}
+.he{
+    height : 2.5rem;
+    display: flex;
+    background-color: red;
+    gap  : 1rem;
+    
+}
+.me{
+    margin : 0.15rem;
+}
+.option-cont{
+    height: 2rem;
+    width : 2rem;
+    background-color: red;
+    color : white;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    
+}
+.option-cont :hover{
+    background-color : black;
+}
+.tool-cont{
+    height: 2rem;
+    width:100vw;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top:2.5rem;
+    left : 0rem;
+    position: absolute;
+}
+.pencil-cont{
+    position: absolute;
+    top:4.5rem;
+   
+    height : 10vh;
+    width : 10vw;
+    background-color: red;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 2.5px 5px rgba(0,0,0,0.3);
+}
+.pencil-color{
+    height: 5vh;
+    width : 100%;
+    -webkit-appearance: none;
+	border: none;
+	background-color: red;
+}
+.pencil-width{
+    overflow: hidden;
+    height : 1vh;
+      
+      -webkit-appearance: none;
+      background-color: black;
+}
+.pencil-width::-webkit-slider-thumb {
+    width: 2vh;
+    -webkit-appearance: none;
+    height: 5vh;
+    cursor: ew-resize;
+    background: white;
+    box-shadow: -80px 0 0 80px black;
+  }
+
+  .eraser-cont{
+    position: absolute;
+    top:4.5rem;
+   
+    height : 10vh;
+    width : 10vw;
+    background-color: red;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0.5vw 1vh rgba(0,0,0,0.3);
+}
+.eraser-color{
+    height: 5vh;
+    width : 100%;
+    -webkit-appearance: none;
+	border: none;
+	background-color: red;
+}
+.eraser-width{
+    overflow: hidden;
+    height : 5px;
+      
+      -webkit-appearance: none;
+      background-color: black;
+}
+.eraser-width::-webkit-slider-thumb {
+    width: 2vh;
+    -webkit-appearance: none;
+    height: 5vh;
+    cursor: ew-resize;
+    background: white;
+    box-shadow: -80px 0 0 80px black;
+  }
+.stickyElem{
+    position: absolute;
+    top:8rem;
+    left : 4rem;
+}
+.header-cont{
+height: 1.5rem;
+width: 12rem;
+background-color: black;
+
+color:white;
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+align-content: center;
+
+}
+.header-cont>*{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.header-cont>* :hover{
+    background-color: red;
+}
+.notes-cont{
+  height: 8.5rem;
+  width : 12rem;
+  resize: none;
+  outline: none;
+  border: none;
+  background-color: lightblue;
+}
+.img-cont{
+    height : 8.5rem;
+    width : 12rem;
+    user-select: none;
+}
